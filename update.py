@@ -1,0 +1,81 @@
+# updates.py
+# import requests
+
+
+
+import praw
+import psycopg2
+
+# handle error response
+def error_response(status_code, message=None):
+    payload = {'error': HTTP_STATUS_CODES.get(status_code, 'Unknown error')}
+    if message:
+        payload['message'] = message
+    response = jsonify(payload)
+    response.status_code = status_code
+    return response
+
+def bad_request(message):
+    return error_response(400, message)
+
+# authenticate with reddit
+reddit = praw.Reddit(client_id='ubcdefghijklmnopqrstuvwxyz',
+                     client_secret='bcdefghijklmnopqrtuvwxyz',
+                     user_agent='my user agent',
+                     thing_limit=100)
+
+# try to connect
+try:
+    connection = psycopg2.connect(
+        "dbname='mydb' user='myuser' password='abcdefghijklmnopqrstuvwxyz')
+except:
+    print("Error: Unable to connect to database.")
+
+# sucess
+cursor = connection.cursor()
+
+def update():
+
+    # loop through our choices
+    choicesArray = ["announcements",
+                    "funny",
+                    "AskReddit",
+                    "gaming",
+                    "aww",
+                    "Music",
+                    "pics",
+                    "science",
+                    "worldnews"]
+
+    for j in choicesArray:
+
+        for submission in reddit.subreddit(j).new(limit=12):
+            my_title = submission.title
+            my_permalink = "https://www.reddit.com" + submission.permalink
+            my_url = submission.url
+            my_utc = submission.created_utc
+            my_num_comments = submission.num_comments
+            my_score = submission.score
+
+            try:
+                cursor.execute(
+                    '''INSERT INTO submissions(title,subredit,permalink,url,utc,comments,score) VALUES(%s,%s,%s,%s,%s,%s,%s) ON CONFLICT DO NOTHING''', (my_title, j, my_permalink, my_url, my_utc, my_num_comments, my_score))
+                connection.commit()
+
+            except (Exception, psycopg2.Error) as error:
+                if(connection):
+                    print("Failed to insert record into mobile table", error)
+            finally:
+                print("Managed record: Inserted or Ignored if duplicate")
+
+            print(j)
+
+
+# INIT update
+update()
+
+# FINISHED
+connection.close()
+
+print('UPDATE COMPLETED')
+
