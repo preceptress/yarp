@@ -55,7 +55,7 @@ def update():
 
             try:
                 cursor.execute(
-                    '''INSERT INTO submissions(title,subreddit,permalink,url,utc,comments,score) VALUES(%s,%s,%s,%s,%s,%s,%s) ON CONFLICT (permalink) DO NOTHING''', (my_title, j, my_permalink, my_url, my_utc, my_num_comments, my_score))
+                    '''INSERT INTO submissions(title,subreddit,permalink,url,utc,comments,score) VALUES(%s,%s,%s,%s,%s,%s,%s) ON CONFLICT(permalink) DO NOTHING''', (my_title, j, my_permalink, my_url, my_utc, my_num_comments, my_score))
                 connection.commit()
 
             except (Exception, psycopg2.Error) as error:
