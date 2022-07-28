@@ -26,7 +26,7 @@ try:
 except:
     print("Error: Unable to connect to database.")
 
-# sucess
+# success
 cursor = connection.cursor()
 
 def update():
