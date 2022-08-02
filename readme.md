@@ -32,7 +32,7 @@ Subreddit data saved to PoatgresSQL.
 Using the YARP engine for real time (or close too) Covid news from Reddit:
 
 
-![alt text](https://user-images.githubusercontent.com/105808631/182388529-740b368a-9a69-42a4-895e-ab2fcef88649.png)
+![alt text](https://user-images.githubusercontent.com/105808631/182389079-1cbb583e-9552-4658-b904-12b2709b5963.png)
 
 
 
