@@ -1,4 +1,4 @@
-# yarp
+# YARP
 ### The YARP Engine. Yet Another Realtime Parser.
 
 There is a lot of cool information on Reddit - but sometimes it can get buried. 
