@@ -10,7 +10,7 @@ The engine: YARP. Yet Another Realtime Parser.
 
 Open Source. Super Fast. Like the speed of light (allmost) kind of fast. If you are doing anything with the Reddit API you will need a database at one point.  This is a starting point. Easy to modify for your purposes.
 
-You do need to register your App with Reddit to get a App ID and Secret Key.
+You do need to register your App with Reddit to get a App ID and Secret Key. All your constants are stored in a local .env file.
 
 https://www.reddit.com/prefs/apps/
 
