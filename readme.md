@@ -2,7 +2,7 @@
 ### The YARP Engine. Yet Another Realtime Parser.
 
 There is a lot of cool information on Reddit - but sometimes it can get buried. 
-Google Search is overwhelming, a water falls of info, the default Reddit search can take you down a rabbit hole of rabbits holes. And still not find what you are lookinkg for.
+Google Search is overwhelming, a tsunami of info, the default Reddit search can take you down a rabbit hole of rabbits holes. And still not find what you are lookinkg for.
 
 So I decided to wrangle the Hive. There is good info out there. It’s just buried.
 
