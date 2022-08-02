@@ -29,6 +29,14 @@ Subreddit data saved to PoatgresSQL.
 
 ![alt text](https://user-images.githubusercontent.com/105808631/181680969-a60c94df-3dfc-4841-9b97-ade10c7beb95.png)
 
+Resources for lists of Reddit subreddits:
+
+http://redditlist.com/
+
+https://blog.oneupapp.io/biggest-subreddits/
+
+https://www.reddit.com/subreddits/leaderboard/
+
 Using the YARP engine for real time (or close too) Covid news from Reddit:
 
 
