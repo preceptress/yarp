@@ -39,6 +39,8 @@ https://www.reddit.com/subreddits/leaderboard/
 
 Using the YARP engine for real time (or close too) Covid news from Reddit:
 
+https://hackingthevirus.com
+
 
 ![alt text](https://user-images.githubusercontent.com/105808631/182400732-89ea2223-a554-453e-a886-26d2bc1a4144.png)
 
