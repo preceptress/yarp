@@ -41,7 +41,6 @@ Project page:
 
 https://preceptress.com
 
-
 ![alt text](https://github.com/preceptress/yarp/blob/main/stack.png)
 
 Using the YARP engine for real time (or close too) Covid news from Reddit:
