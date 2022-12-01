@@ -37,6 +37,10 @@ https://blog.oneupapp.io/biggest-subreddits/
 
 https://www.reddit.com/subreddits/leaderboard/
 
+Project page:
+
+https://preceptress.com
+
 Using the YARP engine for real time (or close too) Covid news from Reddit:
 
 https://hackingthevirus.com
