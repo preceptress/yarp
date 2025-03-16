@@ -39,7 +39,6 @@ https://www.reddit.com/subreddits/leaderboard/
 
 Project page:
 
-https://preceptress.com
 
 ![alt text](https://github.com/preceptress/yarp/blob/main/stack.png)
 
